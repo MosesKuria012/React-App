@@ -19,6 +19,10 @@ const thirdBook = {
   img: 'https://images-na.ssl-images-amazon.com/images/I/71yNgTMEcpL._AC_UL600_SR600,400_.jpg',
 }
 
+const Onclick = () => {
+  alert('Click to Confirm')
+}
+
 function BookList() {
   return (
     <section className="booklist">
@@ -46,6 +50,9 @@ const Book = (props) => {
       <img src={props.img} alt={props.title} />
       <h2>{props.title}</h2>
       <h4>{props.author} </h4>
+      <button id="btn" type="button" onClick={Onclick}>
+        Next Book
+      </button>
     </article>
   )
 }
